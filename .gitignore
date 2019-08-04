@@ -58,3 +58,6 @@ public/
 
 # Bundle stats
 bundle-stats.json
+
+# npm package manager (we dont want to mix and match)
+package-lock.json
