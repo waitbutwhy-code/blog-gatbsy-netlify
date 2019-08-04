@@ -59,10 +59,7 @@ const IndexPage = ({
             src="https://twemoji.maxcdn.com/2/svg/1f9d0.svg"
           />
         </h1>
-        <p>
-          I&apos;m John Doe, a Senior UX Developer with five years of industry experience, specializing in developing
-          React apps with the best UX users can get.
-        </p>
+        <p>Analysis, opinion pieces on venture, technology and building the future.</p>
         <Link to="/contact">
           <Button big>
             <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
