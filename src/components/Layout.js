@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
+import React from "react";
+import PropTypes from "prop-types";
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 
-import SEO from './SEO'
-import theme from '../../config/theme'
-import useBuildTime from '../hooks/useBuildTime'
+import SEO from "./SEO";
+import theme from "../../config/theme";
+import useBuildTime from "../hooks/useBuildTime";
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -18,12 +18,12 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
   ::selection {
-    color: ${props => props.theme.colors.bg};
-    background: ${props => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.bg};
+    background: ${(props) => props.theme.colors.primary};
   }
   html {
-    font-family: ${props => props.theme.fontFamily.sansSerif};
-    font-size: ${props => props.theme.baseFontSize};
+    font-family: ${(props) => props.theme.fontFamily.sansSerif};
+    font-size: ${(props) => props.theme.baseFontSize};
     h1 {
       font-size: 3.052rem;
     }
@@ -39,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
     h5 {
       font-size: 1.25rem;
     }
-    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+    @media (max-width: ${(props) => props.theme.breakpoints.phone}) {
       font-size: 16px;
       h1 {
         font-size: 2.488rem;
@@ -59,16 +59,16 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   body {
-    background: ${props => props.theme.colors.bg};
-    color: ${props => props.theme.colors.grey.default};
+    background: ${(props) => props.theme.colors.bg};
+    color: ${(props) => props.theme.colors.grey.default};
   }
   a {
-    color: ${props => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary};
     text-decoration: none;
-    transition: all ${props => props.theme.transitions.normal};
+    transition: all ${(props) => props.theme.transitions.normal};
   }
   a:hover {
-    color: ${props => props.theme.colors.primaryLight};
+    color: ${(props) => props.theme.colors.primaryLight};
   }
   a:not([href]):not([tabindex]) {
     color: inherit;
@@ -83,8 +83,8 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   h1, h2, h3, h4, h5, h6 {
-    color: ${props => props.theme.colors.grey.dark};
-    font-family: ${props => props.theme.fontFamily.serif};
+    color: ${(props) => props.theme.colors.grey.dark};
+    font-family: ${(props) => props.theme.fontFamily.serif};
   }
   blockquote {
     font-style: italic;
@@ -94,20 +94,20 @@ const GlobalStyle = createGlobalStyle`
   blockquote:before {
     content: "";
     position: absolute;
-    background: ${props => props.theme.colors.primary};
+    background: ${(props) => props.theme.colors.primary};
     height: 100%;
     width: 6px;
     margin-left: -1.6rem;
   }
   label {
     margin-bottom: .5rem;
-    color: ${props => props.theme.colors.grey.dark};
+    color: ${(props) => props.theme.colors.grey.dark};
   }
   input, textarea, button {
     font-size: 1rem;
   }
   textarea {
-    font-family: ${props => props.theme.fontFamily.sansSerif};
+    font-family: ${(props) => props.theme.fontFamily.sansSerif};
   }
   input, textarea {
     border-radius: .5rem;
@@ -145,12 +145,12 @@ const GlobalStyle = createGlobalStyle`
   }
   table {
     border-collapse: collapse;
-    background-color: ${props => props.theme.colors.bg};
+    background-color: ${(props) => props.theme.colors.bg};
   }
   caption {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    color: ${props => props.theme.colors.color};
+    color: ${(props) => props.theme.colors.color};
     text-align: center;
     caption-side: bottom;
   }
@@ -184,7 +184,7 @@ const GlobalStyle = createGlobalStyle`
   [hidden] {
     display: none !important;
   }
-`
+`;
 
 const Footer = styled.footer`
   text-align: center;
@@ -192,10 +192,10 @@ const Footer = styled.footer`
   span {
     font-size: 0.75rem;
   }
-`
+`;
 
 const Layout = ({ children, customSEO }) => {
-  const buildTime = useBuildTime()
+  const buildTime = useBuildTime();
 
   return (
     <ThemeProvider theme={theme}>
@@ -204,22 +204,22 @@ const Layout = ({ children, customSEO }) => {
         <GlobalStyle />
         {children}
         <Footer>
-          &copy; 2019 by LekoArts. All rights reserved. <br />
-          <a href="https://github.com/LekoArts/gatsby-starter-minimal-blog">GitHub Repository</a> <br />
+          &copy; 2020 Broconomist. All rights reserved. <br />
+          <a href="https://www.twitter.com">Twitter</a> <br />
           <span>Last build: {buildTime}</span>
         </Footer>
       </>
     </ThemeProvider>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
 
 Layout.propTypes = {
   children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired,
   customSEO: PropTypes.bool,
-}
+};
 
 Layout.defaultProps = {
   customSEO: false,
-}
+};
