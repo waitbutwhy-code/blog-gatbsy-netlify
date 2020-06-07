@@ -10,7 +10,7 @@ module.exports = {
   siteBanner: '/social/broconomist-banner.png', // Your image for og:image tag. You can find it in the /static folder
   favicon: 'src/bro-logo-small.png', // Your image for favicons. You can find it in the /src folder
   siteDescription: 'Analysis, opinion pieces on venture, technology and building the future.', // Your site description
-  author: 'mjay85', // Author for schemaORGJSONLD
+  author: 'broconomist', // Author for schemaORGJSONLD
   siteLogo: '/social/bro-logo.png', // Image for schemaORGJSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
