@@ -60,10 +60,10 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background: ${(props) => props.theme.colors.bg};
-    color: ${(props) => props.theme.colors.grey.default};
+    color: ${(props) => props.theme.colors.white};
   }
   a {
-    color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.grey.superUltraLight};
     text-decoration: none;
     transition: all ${(props) => props.theme.transitions.normal};
   }
@@ -83,7 +83,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   h1, h2, h3, h4, h5, h6 {
-    color: ${(props) => props.theme.colors.grey.dark};
+    color: ${(props) => props.theme.colors.white};
     font-family: ${(props) => props.theme.fontFamily.serif};
   }
   blockquote {
@@ -101,7 +101,7 @@ const GlobalStyle = createGlobalStyle`
   }
   label {
     margin-bottom: .5rem;
-    color: ${(props) => props.theme.colors.grey.dark};
+    color: ${(props) => props.theme.colors.white};
   }
   input, textarea, button {
     font-size: 1rem;

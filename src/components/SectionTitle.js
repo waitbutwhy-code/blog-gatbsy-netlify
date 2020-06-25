@@ -5,7 +5,7 @@ const SectionTitle = styled.div`
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  color: ${props => props.theme.colors.grey.dark};
+  color: ${props => props.theme.colors.white};
   position: relative;
   padding-bottom: 1rem;
   margin-bottom: 4rem;
@@ -18,7 +18,7 @@ const SectionTitle = styled.div`
     bottom: 0;
     left: 50%;
     margin-left: -25px;
-    background: ${props => props.theme.colors.grey.ultraLight};
+    background: ${props => props.theme.colors.grey.superUltraLight};
   }
 `
 
