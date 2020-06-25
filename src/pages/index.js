@@ -59,7 +59,7 @@ const IndexPage = ({
             src="https://twemoji.maxcdn.com/2/svg/1f9d0.svg"
           />
         </h1>
-        <p>Analysis & opinions on finance, venture and building the future.</p>
+        <p>Analysis & opinions on business, venture and building the future.</p>
         <Link to="/contact">
           <Button big>
             <svg

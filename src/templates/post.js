@@ -58,7 +58,15 @@ const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) =>
       <Wrapper>
         <SEO postPath={slug} postNode={postNode} article />
         <Header>
-          <Link to="/">{config.siteTitle}</Link>
+          <Link to="/">{config.siteTitle} ..{" "}
+          <img
+            height="20"
+            draggable="false"
+            className="emoji"
+            alt="🧐"
+            src="https://twemoji.maxcdn.com/2/svg/1f9d0.svg"
+          />
+          </Link>
         </Header>
         <Content>
           <Title>{post.title}</Title>
