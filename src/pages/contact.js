@@ -50,7 +50,15 @@ const Contact = () => (
     <Wrapper>
       <Helmet title={`Contact | ${config.siteTitle}`} />
       <Header>
-        <Link to="/">{config.siteTitle}</Link>
+      <Link to="/">{config.siteTitle} ..{" "}
+          <img
+            height="18"
+            draggable="false"
+            className="emoji"
+            alt="🧐"
+            src="https://twemoji.maxcdn.com/2/svg/1f9d0.svg"
+          />
+          </Link>
       </Header>
       <Content>
         <h1>Contact</h1>

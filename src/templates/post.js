@@ -60,7 +60,7 @@ const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) =>
         <Header>
           <Link to="/">{config.siteTitle} ..{" "}
           <img
-            height="20"
+            height="18"
             draggable="false"
             className="emoji"
             alt="🧐"
