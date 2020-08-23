@@ -14,7 +14,7 @@ module.exports = {
   siteLogo: '/social/bro-logo.png', // Image for schemaORGJSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@', // Twitter Username - Optional
+  userTwitter: '@yo_jalil', // Twitter Username - Optional
   ogSiteName: 'Broconomist', // Facebook Site Name - Optional
   ogLanguage: 'en_US', // Facebook Language
   googleAnalyticsID: 'UA-145053152-1',

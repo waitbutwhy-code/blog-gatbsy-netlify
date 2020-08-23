@@ -205,7 +205,7 @@ const Layout = ({ children, customSEO }) => {
         {children}
         <Footer>
           &copy; 2020 Broconomist. All rights reserved. <br />
-          <a href="https://www.twitter.com">Twitter</a> <br />
+          <a href="https://www.twitter.com/yo_jalil">Twitter</a> <br />
           <span>Last build: {buildTime}</span>
         </Footer>
       </>
