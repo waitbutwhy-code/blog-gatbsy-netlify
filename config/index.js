@@ -8,7 +8,7 @@ module.exports = {
   siteLanguage: 'en', // Language Tag on <html> element
   siteHeadline: 'Writing and publishing content', // Headline for schema.org JSONLD
   siteBanner: '/social/broconomist-website-banner.png', // Your image for og:image tag. You can find it in the /static folder
-  favicon: 'src/favicon-96x96.png', // Your image for favicons. You can find it in the /src folder
+  favicon: 'src/favicon.png', // Your image for favicons. You can find it in the /src folder
   siteDescription: 'Analysis, opinion pieces on venture, technology and building the future.', // Your site description
   author: 'broconomist', // Author for schemaORGJSONLD
   siteLogo: '/social/bro-logo.png', // Image for schemaORGJSONLD
