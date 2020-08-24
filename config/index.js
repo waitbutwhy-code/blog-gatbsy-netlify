@@ -17,7 +17,7 @@ module.exports = {
   userTwitter: '@yo_jalil', // Twitter Username - Optional
   ogSiteName: 'Broconomist', // Facebook Site Name - Optional
   ogLanguage: 'en_US', // Facebook Language
-  googleAnalyticsID: 'GTM-TQJVT32',
+  googleAnalyticsID: 'UA-176139245-1',
 
   // Manifest and Progress color
   // See: https://developers.google.com/web/fundamentals/web-app-manifest/
