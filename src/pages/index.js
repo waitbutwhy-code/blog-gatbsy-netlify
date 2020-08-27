@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import styled from "styled-components";
+import theme from "../../config/theme";
 
 import { Layout, Article, Wrapper, Button, SectionTitle } from "../components";
 
@@ -46,6 +47,8 @@ const Logo = styled.div.attrs(props => ({
 }))`
  & .white {
   background: white;
+  padding: 0 0 0 0rem;
+  color: ${theme.colors.bg}
  }
 
 `
@@ -61,18 +64,11 @@ const IndexPage = ({
         <Logo white> 
         <h1>
           <span className={"white"}>
-          Bro  
+          _Bro  
           </span>
           <span>
           conomist ..{" "}
           </span>
-          <img
-            height="42"
-            draggable="false"
-            className="emoji"
-            alt="🧐"
-            src="https://twemoji.maxcdn.com/2/svg/1f9d0.svg"
-          />
         </h1>
         </Logo>
         <p>Analysis & opinions on venture, finance and building the future.</p>

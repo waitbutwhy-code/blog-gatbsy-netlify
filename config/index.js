@@ -9,7 +9,7 @@ module.exports = {
   siteHeadline: 'Venture, finance & the future', // Headline for schema.org JSONLD
   siteBanner: '/social/broconomist-website-banner.png', // Your image for og:image tag. You can find it in the /static folder
   favicon: 'src/favicon.png', // Your image for favicons. You can find it in the /src folder
-  siteDescription: 'Analysis, opinions on venture, finance and building the future.', // Your site description
+  siteDescription: 'Analysis & opinions on venture, finance and building the future.', // Your site description
   author: 'broconomist', // Author for schemaORGJSONLD
   siteLogo: '/social/bro-logo.png', // Image for schemaORGJSONLD
 
