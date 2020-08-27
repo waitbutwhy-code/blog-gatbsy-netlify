@@ -4,7 +4,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { Layout, Wrapper, Header, Button } from '../components'
+import { Layout, Wrapper, Header, Button, Logo } from '../components'
 
 import config from '../../config'
 
@@ -50,14 +50,8 @@ const Contact = () => (
     <Wrapper>
       <Helmet title={`Contact | ${config.siteTitle}`} />
       <Header>
-      <Link to="/">{config.siteTitle} ..{" "}
-          <img
-            height="18"
-            draggable="false"
-            className="emoji"
-            alt="🧐"
-            src="https://twemoji.maxcdn.com/2/svg/1f9d0.svg"
-          />
+      <Link to="/">
+        <Logo/>
           </Link>
       </Header>
       <Content>

@@ -2,9 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import styled from "styled-components";
-import theme from "../../config/theme";
 
-import { Layout, Article, Wrapper, Button, SectionTitle } from "../components";
+import { Layout, Article, Wrapper, Button, SectionTitle , Logo} from "../components";
 
 const Content = styled.div`
   grid-column: 2;
@@ -42,17 +41,6 @@ const Hero = styled.div`
   }
 `;
 
-const Logo = styled.div.attrs(props => ({
-  className: props.className,
-}))`
- & .white {
-  background: white;
-  padding: 0 0 0 0rem;
-  color: ${theme.colors.bg}
- }
-
-`
-
 const IndexPage = ({
   data: {
     allMdx: { nodes: posts },
@@ -61,16 +49,9 @@ const IndexPage = ({
   <Layout>
     <Wrapper>
       <Hero>
-        <Logo white> 
         <h1>
-          <span className={"white"}>
-          _Bro  
-          </span>
-          <span>
-          conomist ..{" "}
-          </span>
+          <Logo/>
         </h1>
-        </Logo>
         <p>Analysis & opinions on venture, finance and building the future.</p>
         <Link to="/contact">
           <Button big>
