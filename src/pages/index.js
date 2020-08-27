@@ -41,6 +41,15 @@ const Hero = styled.div`
   }
 `;
 
+const Logo = styled.div.attrs(props => ({
+  className: props.className,
+}))`
+ & .white {
+  background: white;
+ }
+
+`
+
 const IndexPage = ({
   data: {
     allMdx: { nodes: posts },
@@ -49,8 +58,14 @@ const IndexPage = ({
   <Layout>
     <Wrapper>
       <Hero>
+        <Logo white> 
         <h1>
-          Broconomist ..{" "}
+          <span className={"white"}>
+          Bro  
+          </span>
+          <span>
+          conomist ..{" "}
+          </span>
           <img
             height="42"
             draggable="false"
@@ -59,6 +74,7 @@ const IndexPage = ({
             src="https://twemoji.maxcdn.com/2/svg/1f9d0.svg"
           />
         </h1>
+        </Logo>
         <p>Analysis & opinions on venture, finance and building the future.</p>
         <Link to="/contact">
           <Button big>
