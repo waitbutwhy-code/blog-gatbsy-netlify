@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 
-import { Layout, Wrapper, Header, Subline, Article, SectionTitle } from '../components'
+import { Layout, Wrapper, Header, Subline, Article, SectionTitle, Logo } from '../components'
 import config from '../../config'
 
 const Content = styled.div`
@@ -32,7 +32,9 @@ const Category = ({ pageContext: { category }, data: { allMdx } }) => {
       <Wrapper>
         <Helmet title={`Category: ${category} | ${config.siteTitle}`} />
         <Header>
-          <Link to="/">{config.siteTitle}</Link>
+          <Link to="/">
+            <Logo/>
+          </Link>
         </Header>
         <Content>
           <SectionTitle>Category &ndash; {category}</SectionTitle>

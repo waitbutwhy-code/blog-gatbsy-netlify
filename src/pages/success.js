@@ -4,7 +4,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { Layout, Wrapper, Header } from '../components'
+import { Layout, Wrapper, Header , Logo} from '../components'
 
 import config from '../../config'
 
@@ -45,7 +45,7 @@ const Success = () => (
     <Wrapper>
       <Helmet title={`Contact | ${config.siteTitle}`} />
       <Header>
-        <Link to="/">{config.siteTitle}</Link>
+        <Link to="/"><Logo/></Link>
       </Header>
       <Content>
         <h1>Your message was sent!</h1>
